@@ -16,7 +16,7 @@ attr_accessor :name, :yrs_experience
   
   def new_meal(customer, total, tip=0)
     Meal.new(self, customer, total, tip)
-  end
+  end # creates new meals served by the waiter 
   
   def meals
     Meal.all.select do |meal|
